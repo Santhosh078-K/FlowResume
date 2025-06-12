@@ -1,0 +1,22 @@
+# .gitignore
+.env
+__pycache__/
+*.pyc
+app_data.json # Your local database file, don't upload user history
+.streamlit/*.toml # This line would ignore ALL toml files in .streamlit
+# BETTER: specifically ignore local secrets and keep the placeholder
+# .streamlit/secrets.toml # if you want to keep actual secrets out
+# ... but since you put dummy values, it's okay to commit the placeholder .streamlit/secrets.toml
+# so you might just want to ignore .env and local db:
+
+# General ignore patterns
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store # macOS specific
+
+# Project specific
+app_data.json
+# If you were storing actual secrets in .streamlit/secrets.toml locally, you'd add:
+# .streamlit/secrets.toml # But for Streamlit Cloud, the file structure needs to be there with dummy values

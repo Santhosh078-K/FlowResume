@@ -1,0 +1,8 @@
+streamlit
+google-generativeai
+python-dotenv # For local development
+pdf2image     # Necessary for PDF processing (will need Poppler binary if run locally)
+pdfkit        # Necessary for PDF generation (will need wkhtmltopdf binary if run locally)
+Pillow        # Dependency for pdf2image
+markdown      # For processing markdown output from AI
+# Add any other libraries you explicitly import (e.g., pandas if you use it for anything)
